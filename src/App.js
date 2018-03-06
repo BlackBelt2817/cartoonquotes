@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import SimpsonsQuotes from './SimpsonsQuotes';
+import RickSanchezQuotes from './RickSanchezQuotes';
 import NavBar from './NavBar'
 
 class App extends Component {
@@ -10,8 +11,10 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <NavBar />
-          <Route path='/simpsons' component={ SimpsonsQuotes }/>
+          {/*<NavBar />*/}
+          <SimpsonsQuotes />
+          <Route path='/simpsonsquotes' component={ SimpsonsQuotes }/>
+          {/*<Route path='/ricksanchezquotes' component={ RickSanchezQuotes }/>*/}
         </div>
       </Router>
     );

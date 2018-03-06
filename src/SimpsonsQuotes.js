@@ -4,8 +4,8 @@ import { Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default class SimpsonsQuotes extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       quote: null,
       character: null,

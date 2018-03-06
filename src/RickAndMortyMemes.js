@@ -4,8 +4,8 @@ import { Button } from 'react-bootstrap';
 const rickAndMorty = require('rick-and-morty');
 
 class RickAndMortyMemes extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             pic: rickAndMorty.random()
         };

@@ -21,13 +21,13 @@ export default class NavBar extends Component {
     return (
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret>
-          Quotes
+          More Quotes
         </DropdownToggle>
         <DropdownMenu>
           <a href='/'><DropdownItem>Home</DropdownItem></a>
           <DropdownItem divider />
-          <a href='/simpsons'><DropdownItem>Simpsons Quotes</DropdownItem></a>
-          <a href='/ricksanchez'><DropdownItem>Rick Sanchez</DropdownItem></a>
+          <a href='/simpsonsquotes'><DropdownItem>Simpsons Quotes</DropdownItem></a>
+          {/*<a href='/ricksanchezquotes'><DropdownItem>Rick Sanchez</DropdownItem></a>*/}
         </DropdownMenu>
       </ButtonDropdown>
       
