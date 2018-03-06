@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button } from 'reactstrap'
+import { Button } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default class SimpsonsQuotes extends Component {
   constructor() {
@@ -40,13 +41,13 @@ export default class SimpsonsQuotes extends Component {
   render() {
     return(
       <div>
-        <h5 style={{display: 'flex', justifyContent: 'center'}}>{this.state.quote}</h5>
-        <h3 style={{display: 'flex', justifyContent: 'center'}}>{this.state.character}</h3>
+        <h1 style={{display: 'flex', justifyContent: 'center'}}>{this.state.quote}</h1>
+        <h4 style={{display: 'flex', justifyContent: 'center'}}>{this.state.character}</h4>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-          <img style={{maxWidth: '40%', maxHeight: '40%'}} src={this.state.image} alt={this.state.character} />
+          <img style={{maxWidth: '20%', maxHeight: '20%'}} src={this.state.image} alt={this.state.character} />
         </div>
         <div style={{position: 'fixed', bottom: '5%', width:'100%', display: 'flex', justifyContent: 'center'}}>
-          <Button style={{background: '#FFD90F', color: 'black', textAlign: 'center', width:'20%'}} onClick={this.newQuote.bind(this)}>D'OH!</Button>
+          <Button style={{background: '#FFD90F', color: 'black', textAlign: 'center', width: 350, height: 80}} onClick={this.newQuote.bind(this)}>D'OH!</Button>
         </div>
       </div>
     );
